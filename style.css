@@ -1,0 +1,146 @@
+/***UNIVERSAL***/
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/***HEADER***/
+
+header nav ul li {
+
+    display: inline-block;
+    padding: 20px;
+    list-style-type: none;
+}
+
+/***MAIN***/
+
+.presentacion {
+
+    text-align: center;
+}
+
+.fotoPortada {
+    display: inline-block;
+}
+
+.box1 {
+
+    background-color: darkkhaki;
+    border-color: black;
+    margin: 20px;
+    padding: 20px;
+    border-width: 5px;
+    border-style: groove;
+    max-width: 100%;
+}
+
+.box2 {
+
+    background-color: whitesmoke;
+    border-color: black;
+    margin: 20px;
+    padding: 20px;
+    border-width: 3px;
+    border-style: solid;
+    display: block; 
+    max-width: 100%;
+    height: 420px;
+
+}
+
+.imagen {
+
+   align-items: center;
+    max-width: 100%;
+    max-height: auto;
+    margin-bottom: 20px;
+}
+
+.redir {
+
+margin-bottom: 10%;
+
+}
+
+
+/***FOOTER***/
+
+
+.footer1 {
+
+    background-color: whitesmoke;
+    border-color: black;
+    margin: 30px;
+    padding: 30px;
+    border-width: 3px;
+    border-style: solid;
+    display: block;
+}
+
+/***MEDIUM <768px***/
+
+@media screen and (max-width: 768px){
+    
+    .box2 {
+        background-color: whitesmoke;
+        border-color: black;
+        margin: 10px;
+        padding: 10px;
+        border-width: 3px;
+        border-style: solid;
+        display: inline-block;
+        max-width: 100%;
+        height: 500px;
+
+    }
+}
+
+
+/***MOBILE <576px***/
+
+@media screen and (max-width: 576px ){
+
+    .box1 {
+
+        background-color: darkkhaki;
+        border-color: black;
+        margin: 10px;
+        padding: 10px;
+        border-width: 5px;
+        border-style: groove;
+        max-width: 100%;
+    }
+    
+    .box2 {
+    
+        background-color: whitesmoke;
+        border-color: black;
+        margin: 10px;
+        padding: 10px;
+        border-width: 3px;
+        border-style: solid;
+        display: inline-block;
+        max-width: 100%;
+        max-height: auto; 
+        height: auto;
+
+        background-color: whitesmoke;
+        border-color: black;
+        margin: 20px;
+        padding: 20px;
+        border-width: 3px;
+        border-style: solid;
+        display: block;
+
+    }
+
+    .container {
+
+        display: block;
+
+
+
+    }
+
+}
