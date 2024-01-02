@@ -1,0 +1,10 @@
+
+
+.footer1 {
+    @include colors ($colorPrimario);
+    margin: 30px;
+    padding: 30px;
+    border-width: 3px;
+    border-style: solid;
+    display: block;
+}

@@ -1,0 +1,105 @@
+$colorPrimario: whitesmoke; 
+$colorSecundario: darkkhaki;
+
+@mixin colors ($fondo) {
+
+    background-color: $fondo;
+    border-color: black;
+}
+
+.presentacion {
+    text-align: center;
+
+    .fotoPortada {
+        display: inline-block;
+    }
+
+}
+
+.box1 {
+    
+    @include colors ($colorSecundario);
+    margin: 20px;
+    padding: 20px;
+    border-width: 5px;
+    border-style: groove;
+    max-width: 100%;
+}
+
+.box2 {
+
+ 
+    @include colors ($colorPrimario);
+    margin: 20px;
+    padding: 20px;
+    border-width: 3px;
+    border-style: solid;
+    display: block;
+    max-width: 100%;
+    height: 420px;
+
+}
+
+
+
+.imagen {
+
+    align-items: center;
+    max-width: 100%;
+    max-height: auto;
+    margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .box2 {
+        @include colors ($colorPrimario);
+        margin: 10px;
+        padding: 10px;
+        border-width: 3px;
+        border-style: solid;
+        display: inline-block;
+        max-width: 100%;
+        height: 500px;
+
+    }
+}
+
+
+//MOBILE <576px//
+
+@media screen and (max-width: 576px) {}
+
+.box1 {
+
+    @include colors ($colorSecundario);
+    margin: 10px;
+    padding: 10px;
+    border-width: 5px;
+    border-style: groove;
+    max-width: 100%;
+}
+
+.box2 {
+
+    @include colors ($colorPrimario);
+    margin: 10px;
+    padding: 10px;
+    border-width: 3px;
+    border-style: solid;
+    display: inline-block;
+    max-width: 100%;
+    max-height: auto;
+    height: auto;
+
+    @include colors ($colorPrimario);
+    margin: 20px;
+    padding: 20px;
+    border-width: 3px;
+    border-style: solid;
+    display: block;
+
+}
+
